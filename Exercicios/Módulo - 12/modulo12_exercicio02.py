@@ -19,8 +19,6 @@ header = [
 fortune_df.replace('-', 0, inplace=True)
 
 #Fiz a substituição dos símbolos por '' e das , por '' e por fim trasformei em Float64...
-#fortune_df[colunas_float] = fortune_df[colunas_float].apply(lambda valor: valor.str.replace('$', '').str.replace(',','').astype(float))
-#fortune_df[colunas_percent] = fortune_df[colunas_percent].apply(lambda valor: valor.str.replace('%', ''))
 fortune_df[header] = fortune_df[header].replace('[$%,]', '', regex=True).astype(float)
 
 fortune_df.to_csv('fortune-limpo.csv', index=False, sep=';')
