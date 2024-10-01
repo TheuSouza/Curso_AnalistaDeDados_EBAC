@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-brasil_df = pd.read_csv('brasil.csv', delimiter=';')
+brasil_df = pd.read_csv('./módulo - 13/brasil.csv', delimiter=';')
 
 menos_populosas_df = brasil_df[[
     'cidade', 

@@ -1,6 +1,6 @@
 import pandas as pd
 
-brasil_df = pd.read_csv('brasil.csv', delimiter=';')
+brasil_df = pd.read_csv('./módulo - 13/brasil.csv', delimiter=';')
 
 # Quais são as 10 cidades mais populosas do Brasil?
 mais_populosas_df = brasil_df[[

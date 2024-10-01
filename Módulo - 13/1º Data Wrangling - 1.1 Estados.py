@@ -3,7 +3,7 @@ import csv
 
 conteudo = list()
 
-soup = BeautifulSoup(open('estados-bruto.xml', 'r'), 'xml')
+soup = BeautifulSoup(open('./módulo - 13/estados-bruto.xml', 'r'), 'xml')
 
 estados = soup.find_all('ESTADO')
 
@@ -29,7 +29,8 @@ for estado in estados:
     dados = list(filter(lambda valor: valor.strip(), dados))
     conteudo.append(dados)
 
-with open('estados-limpo.csv', 'w', encoding='utf-8') as arquivo:
+with open('./módulo - 13/estados-limpo.csv', 'w', encoding='utf-8') as arquivo:
     arquivo_csv = csv.writer(arquivo, delimiter=';')
-    arquivo_csv.writerows([['estado', 'sigla', 'região']] + 
-                          list(map(lambda valor: valor, conteudo)))
+    arquivo_csv.writerows([['estado', 'sigla', 'região']] 
+                          + list(map(lambda valor: valor, conteudo)))
+
