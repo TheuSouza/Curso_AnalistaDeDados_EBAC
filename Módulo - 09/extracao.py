@@ -25,11 +25,11 @@ for _ in range(0, 10):
         dado = json.loads(response.text)
         cdi = float(dado['taxa'].replace(',','.')) + (random() - 0.5)
     
-    if os.path.exists('./taxa-cdi.csv') == False:
-        with open(file='./taxa-cdi.csv', mode='w', encoding='utf8') as fp:
+    if os.path.exists('./Módulo - 09/taxa-cdi.csv') == False:
+        with open(file='./Módulo - 09/taxa-cdi.csv', mode='w', encoding='utf8') as fp:
             fp.write('Data,Hora,Taxa\n')
     
-    with open(file='./taxa-cdi.csv', mode='a', encoding='utf8') as fp:
+    with open(file='./Módulo - 09/taxa-cdi.csv', mode='a', encoding='utf8') as fp:
         fp.write(f'{data},{hora},{cdi}\n')
     
     time.sleep(2 + (random() - 0.5))
