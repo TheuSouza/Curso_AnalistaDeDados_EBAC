@@ -1,0 +1,11 @@
+ranking;project;language;stars;forks;stars_today
+1;json;C++;42,697;6,700;107
+2;cocos-engine;C++;7,650;1,879;150
+3;iree;C++;2,728;598;77
+4;deepface;Python;12,681;2,082;51
+5;mbedtls;C;5,381;2,580;74
+6;kokkos;C++;1,947;433;10
+7;testify;Go;23,304;1,593;9
+8;googleapis;Starlark;6,877;2,276;5
+9;Python;Python;192,306;45,371;352
+10;pglite;TypeScript;8,681;175;38
